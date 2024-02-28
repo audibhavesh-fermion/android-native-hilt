@@ -9,4 +9,5 @@ interface CatFactService : BaseApiService {
 
     @GET("fact")
     suspend fun getFact(): Response<CatFactModel>
+
 }

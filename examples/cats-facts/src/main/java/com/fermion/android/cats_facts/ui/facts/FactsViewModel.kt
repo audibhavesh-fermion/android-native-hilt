@@ -23,9 +23,9 @@ class FactsViewModel @Inject constructor(private val catFactRepository: CatFactR
         viewModelScope.launch {
             try {
                 showProgress.value = ProgressState.SHOW
-                val response = catFactRepository.getFact()
+//                val response = catFactRepository.getFact()
                 showProgress.value = ProgressState.HIDE
-                catFactListener.value = response
+//                catFactListener.value = response
             } catch (e: Exception) {
                 showProgress.value = ProgressState.HIDE
                 Timber.e(e)

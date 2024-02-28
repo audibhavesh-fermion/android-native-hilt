@@ -31,10 +31,9 @@ import com.fermion.android.base.helper.BaseProgressBarProvider
  *@since 1.0.0
  */
 
-abstract class BaseFragment<B : ViewBinding, V : BaseViewModel>() :
+abstract class BaseFragment<B : ViewBinding, V : BaseViewModel>(var customLoader: Boolean) :
     Fragment(), BaseProgressBarProvider {
-
-    var customLoader: Boolean = false
+    constructor() : this(false)
 
     lateinit var viewModel: V
 
@@ -43,7 +42,6 @@ abstract class BaseFragment<B : ViewBinding, V : BaseViewModel>() :
     protected val binding get() = requireNotNull(_binding)
 
     abstract val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> B
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

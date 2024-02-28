@@ -9,7 +9,6 @@ import javax.inject.Singleton
 @Singleton
 class CatFactRepository @Inject constructor(private val catFactService: CatFactService) :
     BaseDataRepository(catFactService) {
-
     suspend fun getFact(): NetworkResult<CatFactModel> {
         return getNetworkResult {
             catFactService.getFact()

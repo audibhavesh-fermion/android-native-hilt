@@ -5,6 +5,9 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="app.sample">
+        <State />
+      </entry>
       <entry key="examples.cats-facts">
         <State />
       </entry>

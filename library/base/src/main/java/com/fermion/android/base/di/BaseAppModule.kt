@@ -8,14 +8,13 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-
 @Module
 @InstallIn(SingletonComponent::class)
-class AppModule {
+class BaseAppModule {
     @Singleton
     @Provides
-    fun provideApplication(@ApplicationContext app: Context): LauncherApplication {
-        return app as LauncherApplication
+    fun provideApplication(@ApplicationContext app: Context): BaseHiltApplication {
+        return app as BaseHiltApplication
     }
 
     @Singleton

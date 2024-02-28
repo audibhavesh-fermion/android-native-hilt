@@ -38,7 +38,7 @@ import kotlin.coroutines.CoroutineContext
 
 @Module
 @InstallIn(SingletonComponent::class)
-class NetworkModule {
+class BaseNetworkModule {
     @Provides
     @Singleton
     fun provideGson(): Gson {

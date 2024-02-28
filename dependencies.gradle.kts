@@ -18,7 +18,6 @@ val androidTestImplementation by configurations
 
 
 extra.apply {
-//    val daggerVersion = "2.47"
     val retrofitVersion = "2.9.0"
     val okhttpVersion = "4.8.1"
     val coroutinesVersion = "1.3.9"

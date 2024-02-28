@@ -22,8 +22,6 @@ class FactsFragment : BaseFragment<FragmentFactsBinding, FactsViewModel>(), Base
     override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> FragmentFactsBinding
         get() = FragmentFactsBinding::inflate
 
-
-
     private var mProgressDialog: Dialog? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
