@@ -13,7 +13,7 @@ This project goals is to reduce boiler plate code.
 
 ## Documentation
 
-[Native Android Documentation (Kotlin)](https://docs.google.com/document/d/1IkexO7LMC_QfuaWFF2DGSDxWjjZEMln66IQlvw5AmT8/edit?usp=sharing)
+[Native Android Hilt Documentation (Kotlin)](https://docs.google.com/document/d/1WYw1PSo1jDD6Qc3MxKkYsep9k-q67P9W_0QQxai7jAk/edit?usp=sharing)
 
 ## Authors
 
